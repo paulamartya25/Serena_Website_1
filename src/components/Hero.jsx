@@ -1,8 +1,8 @@
 'use client';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 export default function Hero() {
   const quotes = [
@@ -45,62 +45,62 @@ export default function Hero() {
           
           {/* Top Image + Quote */}
           <div className="flex flex-col items-end">
-            <motion.img
+            <img
               src="/images_11.png"
               alt="Therapy Visual Top"
               className="w-[300px] h-[200px] object-cover rounded-lg shadow-lg mb-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              // initial={{ opacity: 0, y: -20 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.8 }}
             />
-            <motion.p
+            <p
               className="text-gray-800 text-right text-lg font-semibold max-w-xs"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 1 }}
+              // transition={{ delay: 0.5, duration: 0.8 }}
             >
               “Mental peace is the greatest gift you can give yourself.”
-            </motion.p>
+            </p>
           </div>
 
           {/* Bottom Image + Quote */}
           <div className="flex flex-col items-start mt-12">
-            <motion.img
+            <img
               src="/images_9.png"
               alt="Therapy Visual Bottom"
               className="w-[350px] h-[200px] object-cover rounded-lg shadow-lg mb-2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              // initial={{ opacity: 0, y: 20 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.8 }}
             />
-            <motion.p
+            <p
               className="text-gray-800 text-left text-lg font-semibold max-w-xs"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 1 }}
+              // transition={{ delay: 0.5, duration: 0.8 }}
             >
               “Every step you take matters.”
-            </motion.p>
+            </p>
           </div>
         </div>
 
         {/* RIGHT SIDE: Title + Form + Rotating Quote */}
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center md:text-left px-6 py-16 bg-white">
-          <motion.h1
+          <h1
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-8"
             style={{ fontFamily: "'Dancing Script', cursive" }}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            // initial={{ opacity: 0, y: -20 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 0.8 }}
           >
             Welcome to Blake's Therapy
-          </motion.h1>
+          </h1>
 
-          <motion.form
+          <form
             className="bg-white bg-opacity-90 p-6 rounded-full shadow-md mb-6 max-w-md w-full"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ delay: 0.3, duration: 0.8 }}
           >
             <input
               type="text"
@@ -108,16 +108,16 @@ export default function Hero() {
               className="w-full border border-gray-300 rounded-full px-6 py-3 text-center text-lg font-medium text-gray-700 focus:outline-none"
               required
             />
-          </motion.form>
+          </form>
 
-          <motion.p
+          <p
             className="text-xl md:text-2xl italic text-gray-700 font-medium transition-opacity duration-700 ease-in-out"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ delay: 0.6, duration: 0.8 }}
           >
             {quotes[quoteIndex]}
-          </motion.p>
+          </p>
         </div>
 
       </div>
