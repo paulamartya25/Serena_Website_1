@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 export default function Services() {
   return (
     <section className="py-16 bg-white text-center">
@@ -18,6 +17,7 @@ export default function Services() {
         {/* Service 2 */}
         <div className="bg-gray-100 p-6 rounded-lg shadow-md text-gray-900">
           <Image src="/relationship.png" alt="Relationship Counseling" width={200} height={200} className="mx-auto mb-4" />
+          
           <h3 className="text-xl font-bold mb-2">Relationship Counseling</h3>
           <p className="text-gray-800">
             Enhance communication and strengthen your personal or romantic relationships with compassionate, structured guidance.
@@ -26,7 +26,7 @@ export default function Services() {
 
         {/* Service 3 */}
         <div className="bg-gray-100 p-6 rounded-lg shadow-md text-gray-900">
-          <Image src="/trauma.png" alt="Trauma Recovery" width={200} height={200} className="mx-auto mb-4" />
+          <Image src="/Trauma.png" alt="Trauma Recovery" width={200} height={200} className="mx-auto mb-4" />
           <h3 className="text-xl font-bold mb-2">Trauma Recovery</h3>
           <p className="text-gray-800">
             Heal from past trauma in a safe, supportive environment using approaches like EMDR and trauma-focused CBT.
